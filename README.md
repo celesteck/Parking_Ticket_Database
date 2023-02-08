@@ -10,3 +10,9 @@ In this project, I practice:
   5. Writing code to traverse every record in a database to find a specific entry
   6. Writing code to use a hash function to find a specific entry in the database.
   
+**insertticket.c** is used to insert a ticket (summon) into the database. 
+**vehiclelookup.c** searches for a vehicle by hasing the license plate string to get the hash chain. The hash chain is searched and a pointer matched to the vehicle struct is returned if it is found.
+**sumlookup.c** searches for the vehicle that has specific summons by iteratively searching the database one hash chain at a time
+**largest.c** prints to stdout the largest number of tickets for any vehicle and the largest total fine for any  vehicle by iteratively searching the database one hashchain at a time. 
+**freetickets.c** frees up all of the memory before the program exits and deletes the database using an itereative search of the database one hash chain at a time.
+**delticket.c** deletes a specific summon via a hashtable lookup.
